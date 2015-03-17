@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "ScrollViewController.h"
 @interface ViewController ()
 
 @end
@@ -24,4 +24,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if ([segue.destinationViewController isKindOfClass:[ScrollViewController class]]) {
+        ScrollViewController *svc = (ScrollViewController*)segue.destinationViewController;
+        if ([segue.identifier isEqualToString:@""]) {
+            svc.imageUrl = [NSURL URLWithString:@""];
+            
+        }else if([segue.identifier isEqualToString:@""] ){
+            svc.imageUrl = [NSURL URLWithString:@""];
+            
+        }else{
+            svc.imageUrl = [NSURL URLWithString:@""];
+        }
+        svc.title = segue.identifier;
+    }
+}
 @end

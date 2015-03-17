@@ -14,6 +14,7 @@
 		D737DB571AB89D2000D7A0DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D737DB561AB89D2000D7A0DB /* Images.xcassets */; };
 		D737DB5A1AB89D2000D7A0DB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D737DB581AB89D2000D7A0DB /* LaunchScreen.xib */; };
 		D737DB661AB89D2000D7A0DB /* ImaginariumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D737DB651AB89D2000D7A0DB /* ImaginariumTests.m */; };
+		D737DB711AB8A01300D7A0DB /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D737DB701AB8A01300D7A0DB /* ScrollViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		D737DB5F1AB89D2000D7A0DB /* ImaginariumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImaginariumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D737DB641AB89D2000D7A0DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D737DB651AB89D2000D7A0DB /* ImaginariumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImaginariumTests.m; sourceTree = "<group>"; };
+		D737DB6F1AB8A01300D7A0DB /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		D737DB701AB8A01300D7A0DB /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +84,9 @@
 		D737DB481AB89D2000D7A0DB /* Imaginarium */ = {
 			isa = PBXGroup;
 			children = (
-				D737DB4D1AB89D2000D7A0DB /* AppDelegate.h */,
-				D737DB4E1AB89D2000D7A0DB /* AppDelegate.m */,
-				D737DB501AB89D2000D7A0DB /* ViewController.h */,
-				D737DB511AB89D2000D7A0DB /* ViewController.m */,
+				D737DB721AB8A02B00D7A0DB /* Viewcontroller */,
 				D737DB531AB89D2000D7A0DB /* Main.storyboard */,
 				D737DB561AB89D2000D7A0DB /* Images.xcassets */,
-				D737DB581AB89D2000D7A0DB /* LaunchScreen.xib */,
 				D737DB491AB89D2000D7A0DB /* Supporting Files */,
 			);
 			path = Imaginarium;
@@ -96,6 +95,9 @@
 		D737DB491AB89D2000D7A0DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D737DB4D1AB89D2000D7A0DB /* AppDelegate.h */,
+				D737DB581AB89D2000D7A0DB /* LaunchScreen.xib */,
+				D737DB4E1AB89D2000D7A0DB /* AppDelegate.m */,
 				D737DB4A1AB89D2000D7A0DB /* Info.plist */,
 				D737DB4B1AB89D2000D7A0DB /* main.m */,
 			);
@@ -117,6 +119,17 @@
 				D737DB641AB89D2000D7A0DB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D737DB721AB8A02B00D7A0DB /* Viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				D737DB501AB89D2000D7A0DB /* ViewController.h */,
+				D737DB511AB89D2000D7A0DB /* ViewController.m */,
+				D737DB6F1AB8A01300D7A0DB /* ScrollViewController.h */,
+				D737DB701AB8A01300D7A0DB /* ScrollViewController.m */,
+			);
+			name = Viewcontroller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				D737DB521AB89D2000D7A0DB /* ViewController.m in Sources */,
 				D737DB4F1AB89D2000D7A0DB /* AppDelegate.m in Sources */,
 				D737DB4C1AB89D2000D7A0DB /* main.m in Sources */,
+				D737DB711AB8A01300D7A0DB /* ScrollViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
